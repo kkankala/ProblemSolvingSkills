@@ -6,7 +6,7 @@ namespace birthdaycandles {
             // int arCount = Convert.ToInt32 (Console.ReadLine ());
 
             // int[] ar = Array.ConvertAll (Console.ReadLine ().Split (' '), arTemp => Convert.ToInt32 (arTemp));
-            int arCount = 10;
+            // int arCount = 10;
             int[] ar = new int[] { 44, 53, 31, 27, 77, 60, 66, 77, 26, 36 };
             int result = birthdayCakeCandles (ar);
             Console.WriteLine (result);
