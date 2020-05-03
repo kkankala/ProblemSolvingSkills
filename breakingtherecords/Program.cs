@@ -3,7 +3,8 @@
 namespace breakingtherecords {
     class Program {
         static void Main (string[] args) {
-            Console.WriteLine ("Hello World!");
+            //PROBLEM: https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
+
             var response = breakingRecords (new int[] { 10, 5, 20, 20, 4, 5, 2, 25, 1 });
         }
 

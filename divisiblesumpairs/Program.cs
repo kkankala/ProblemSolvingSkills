@@ -3,7 +3,8 @@
 namespace divisiblesumpairs {
     class Program {
         static void Main (string[] args) {
-            Console.WriteLine ("Hello World!");
+            //PROBLEM: https://www.hackerrank.com/challenges/divisible-sum-pairs/problem
+
             var n = 6;
             var k = 3;
             var ar = new int[] { 1, 3, 2, 6, 1, 2 };

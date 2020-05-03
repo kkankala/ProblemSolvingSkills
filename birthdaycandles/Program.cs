@@ -3,8 +3,10 @@
 namespace birthdaycandles {
     class Program {
         static void Main (string[] args) {
-            // int arCount = Convert.ToInt32 (Console.ReadLine ());
 
+            // PROBLEM: https://www.hackerrank.com/challenges/birthday-cake-candles/problem
+
+            // Examples
             // int[] ar = Array.ConvertAll (Console.ReadLine ().Split (' '), arTemp => Convert.ToInt32 (arTemp));
             // int arCount = 10;
             int[] ar = new int[] { 44, 53, 31, 27, 77, 60, 66, 77, 26, 36 };

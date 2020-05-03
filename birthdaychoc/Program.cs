@@ -4,7 +4,9 @@ using System.Collections.Generic;
 namespace birthdaychoc {
     class Program {
         static void Main (string[] args) {
-            Console.WriteLine ("Hello World!");
+            //PROBLEM: https://www.hackerrank.com/challenges/the-birthday-bar/problem
+
+            //Examples:
             var s = new List<int> () { 1, 2, 1, 3, 2 };
             var response = birthday (s, 3, 2); //-- output 2;
 

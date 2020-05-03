@@ -5,7 +5,8 @@ using System.Linq;
 namespace migratoryBirds {
     class Program {
         static void Main (string[] args) {
-            Console.WriteLine ("Hello World!");
+            //PROBLEM: https://www.hackerrank.com/challenges/migratory-birds/problem
+
             var dict = migratoryBirds (new List<int> { 1, 4, 4, 45, 3 });
             Console.WriteLine (dict);
         }

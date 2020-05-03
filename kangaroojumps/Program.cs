@@ -2,24 +2,9 @@
 using System.IO;
 namespace kangaroojumps {
     class Program {
-        static string kangaroo (int x1, int v1, int x2, int v2) {
-
-            int y1 = x1 + v1;
-            int y2 = x2 + v2;
-            if (y1 == y2) {
-                return "YES";
-            }
-            for (var i = 2; i <= 10000; i++) {
-                y1 = y1 + v1;
-                y2 = y2 + v2;
-                if (y1 == y2) {
-                    return "YES";
-                }
-            }
-            return "NO";
-        }
-
         static void Main (string[] args) {
+
+            // PROBLME: https://www.hackerrank.com/challenges/kangaroo/problem
             //TextWriter textWriter = new StreamWriter (@System.Environment.GetEnvironmentVariable ("OUTPUT_PATH"), true);
 
             //string[] x1V1X2V2 = Console.ReadLine ().Split (' ');
@@ -39,5 +24,23 @@ namespace kangaroojumps {
             //textWriter.Flush ();
             //textWriter.Close ();
         }
+
+        static string kangaroo (int x1, int v1, int x2, int v2) {
+
+            int y1 = x1 + v1;
+            int y2 = x2 + v2;
+            if (y1 == y2) {
+                return "YES";
+            }
+            for (var i = 2; i <= 10000; i++) {
+                y1 = y1 + v1;
+                y2 = y2 + v2;
+                if (y1 == y2) {
+                    return "YES";
+                }
+            }
+            return "NO";
+        }
+
     }
 }
