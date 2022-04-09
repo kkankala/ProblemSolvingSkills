@@ -4,7 +4,8 @@
   "description": "Some common problems helping to improve analytical skills.",
   "main": "index.js",
   "scripts": {
-    "palindrome-number":"ts-node ./palindromeNumber/index.ts"
+    "palindrome-number":"ts-node ./palindromeNumber/index.ts",
+    "two-sum":"ts-node ./twoSum/index.ts"
   },
   "repository": {
     "type": "git",
