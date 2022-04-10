@@ -49,4 +49,10 @@ export class LinkedList<T> {
       currentNode = currentNode.next;
     }
   }
+
+  /** Add node to the end of the linked list */
+  add = (node: LinkedListNode<T>): void => {
+    let lastNode = this.getLast();
+    if (lastNode) lastNode.next = node;
+  };
 }
