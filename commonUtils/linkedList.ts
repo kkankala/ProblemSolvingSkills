@@ -51,9 +51,9 @@ export class LinkedList<T> {
 
   print(): void {
     let currentNode = this.head;
-    while (currentNode?.data) {
-      console.log(currentNode.data);
-      currentNode = currentNode.next;
+    while (currentNode !== null) {
+      console.log(currentNode?.data);
+      currentNode = currentNode?.next;
     }
   }
 
