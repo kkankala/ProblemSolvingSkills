@@ -1,0 +1,26 @@
+{
+  "name": "problemsolvingsskills",
+  "version": "1.0.0",
+  "description": "Some common problems helping to improve analytical skills.",
+  "main": "index.js",
+  "scripts": {
+    "palindrome-number":"ts-node ./palindromeNumber/index.ts",
+    "two-sum":"ts-node ./twoSum/index.ts",
+    "urlify":"ts-node ./urlify/index.ts",
+    "is-unique":"ts-node ./isUnique/index.ts",
+    "check-permutation":"ts-node ./checkPermutation/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkankala/ProblemSolvingSkills.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkankala/ProblemSolvingSkills/issues"
+  },
+  "homepage": "https://github.com/kkankala/ProblemSolvingSkills#readme",
+  "dependencies": {
+    "ts-node": "^10.7.0"
+  }
+}
