@@ -1,5 +1,4 @@
 import { LinkedList, LinkedListNode } from '../commonUtils/linkedList';
-//TODO: Finish this.
 
 /**
  * Intersection: Given two (singly) linked lists, determine if the two lists intersect. Return the intersecting node.
@@ -18,12 +17,9 @@ const findIntersection = (
 
   let pointerList1: any = list1;
   let pointerList2: any = list2;
-  let count = 0;
   while (pointerList1 != pointerList2) {
     pointerList1 = pointerList1 !== null ? pointerList1.next : list2;
     pointerList2 = pointerList2 !== null ? pointerList2.next : list1;
-    count++;
-    console.log(count);
   }
   return pointerList1;
 
@@ -98,6 +94,7 @@ firstLinkedList.add(node2);
 firstLinkedList.add(node1);
 firstLinkedList.print();
 
+//TODO: setting up data is wrong, solution is working on leettocode - https://leetcode.com/problems/intersection-of-two-linked-lists/submissions/
 console.log('creating linkedlist 2');
 // let secondLinkedList = new LinkedList<number>(new LinkedListNode<number>(4));
 // secondLinkedList.add(new LinkedListNode<number>(6));
