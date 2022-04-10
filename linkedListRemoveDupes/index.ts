@@ -1,9 +1,8 @@
 import { LinkedList, LinkedListNode } from '../commonUtils/linkedList';
 
 /**
- * Remove Dups: Write code to remove duplicates from an unsorted linked list. FOLLOW UP
-How would you solve this problem if a temporary buffer is not allowed?
- * @param linkedList 
+ * Remove Dupes: Write code to remove duplicates from an unsorted linked list.
+ * @param linkedList
  */
 const removeDupes = (linkedList: LinkedList<number>) => {
   let myMap = new Map<number, number>();
@@ -24,24 +23,19 @@ const removeDupes = (linkedList: LinkedList<number>) => {
 
 var node1 = new LinkedListNode<number>(4);
 var node2 = new LinkedListNode<number>(2);
-node1.next = node2;
-
 var node3 = new LinkedListNode<number>(1);
-node2.next = node3;
-
 var node4 = new LinkedListNode<number>(3);
-node3.next = node4;
-
 var node5 = new LinkedListNode<number>(7);
-node4.next = node5;
-
 var node6 = new LinkedListNode<number>(2);
-node5.next = node6;
-
 var node7 = new LinkedListNode<number>(5);
-node6.next = node7;
 
 const linkedList = new LinkedList<number>(node1);
+linkedList.add(node2);
+linkedList.add(node3);
+linkedList.add(node4);
+linkedList.add(node5);
+linkedList.add(node6);
+linkedList.add(node7);
 linkedList.print();
 console.log('deleting dupes now...');
 removeDupes(linkedList);

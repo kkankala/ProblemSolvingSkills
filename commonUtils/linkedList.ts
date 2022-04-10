@@ -5,6 +5,13 @@ export class LinkedListNode<T> {
     this.data = data;
     this.next = null;
   }
+  print(): void {
+    let currentNode: any = this;
+    while (currentNode?.data) {
+      console.log(currentNode.data);
+      currentNode = currentNode!.next;
+    }
+  }
 }
 
 export class LinkedList<T> {
@@ -44,9 +51,40 @@ export class LinkedList<T> {
 
   print(): void {
     let currentNode = this.head;
-    while (currentNode?.data) {
-      console.log(currentNode.data);
-      currentNode = currentNode.next;
+    while (currentNode !== null) {
+      console.log(currentNode?.data);
+      currentNode = currentNode?.next;
     }
   }
+
+  /** Add node to the end of the linked list */
+  add = (node: LinkedListNode<T>): void => {
+    let lastNode = this.getLast();
+    if (lastNode) lastNode.next = node;
+  };
+
+  remove = (item: T): boolean => {
+    let currentNode = this.head;
+    let previousNode: LinkedListNode<T> | null | undefined = null;
+
+    // if Head node needs to be deleted
+    if (currentNode !== null && currentNode?.data === item) {
+      this.head = currentNode.next;
+      return true;
+    }
+
+    // Search for the key to be deleted, keep track of the previous node
+    while (currentNode !== null && currentNode?.data !== item) {
+      previousNode = currentNode;
+      currentNode = currentNode?.next;
+    }
+
+    if (currentNode == null) {
+      return false;
+    }
+
+    //unlink the node from linkedlist;
+    previousNode!.next = currentNode.next;
+    return true;
+  };
 }
