@@ -14,7 +14,8 @@
     "remove-dupes":"ts-node ./linkedListRemoveDupes/index.ts",
     "delete-dupes":"ts-node ./linkedListRemoveDupes/withoutBuffer.ts",
     "kth-element-easy":"ts-node ./linkedListKthToLast/easy.ts",
-    "kth-element":"ts-node ./linkedListKthToLast/index.ts"
+    "kth-element":"ts-node ./linkedListKthToLast/index.ts",
+    "delete-middle-node":"ts-node ./linkedListDeleteMiddleNode/index.ts"
   },
   "repository": {
     "type": "git",
