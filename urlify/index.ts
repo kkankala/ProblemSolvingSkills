@@ -21,5 +21,47 @@ const URLify = (input: string): string => {
   return response.join('');
 };
 
+/**
+ * This is Cracking the coding interview prob, but work only when you have trailing spaces and will fail when there are spaces at the beginning.
+ * @param input
+ * @param trueLength
+ * @returns
+ */
+const replaceSpaces = (input: string, trueLength: number): string => {
+  let spaceCount = 0;
+  let index = 0;
+  let char = input.split('');
+
+  //count number of spaces
+  for (let i = 0; i < trueLength; i++) {
+    if (char[i] === ' ') {
+      spaceCount++;
+    }
+  }
+
+  console.log(`Total space count: ${spaceCount}`);
+  index = trueLength + spaceCount * 2 - 1;
+  console.log(`initialized index: ${index}`);
+
+  for (let i = trueLength - 1; i >= 0; i--) {
+    if (char[i] === ' ') {
+      char[index] = '0';
+      char[index - 1] = '2';
+      char[index - 2] = '%';
+      index -= 3;
+    } else {
+      char[index] = char[i];
+      index--;
+    }
+  }
+  return char.join('').trim();
+};
+
 printOutput('Combined string is :{0}', URLify('Mr John Smith      '));
 printOutput('Combined string is :{0}', URLify('   Mr John Smith'));
+
+// printOutput(
+//   'Combined string is :{0}',
+//   replaceSpaces('Mr John Smith      ', 13)
+// );
+// printOutput('Combined string is :{0}', replaceSpaces('   Mr John Smith', 13));
