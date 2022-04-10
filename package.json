@@ -11,7 +11,8 @@
     "check-permutation":"ts-node ./checkPermutation/index.ts",
     "perm-pali":"node ./palindromePermutation/index.js",
     "is-rotation":"ts-node ./stringRotation/index.ts",
-    "remove-dupes":"ts-node ./removeDupes/index.ts"
+    "remove-dupes":"ts-node ./removeDupes/index.ts",
+    "delete-dupes":"ts-node ./removeDupes/withoutBuffer.ts"
   },
   "repository": {
     "type": "git",

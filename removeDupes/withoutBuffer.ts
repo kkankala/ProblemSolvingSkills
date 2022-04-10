@@ -1,23 +1,23 @@
 import { LinkedList, LinkedListNode } from '../commonUtils/linkedList';
 
 /**
- * Remove Dupes: Write code to remove duplicates from an unsorted linked list.
- * @param linkedList
+ * Remove Dupes: Write code to remove duplicates from an unsorted linked list. FOLLOW UP
+How would you solve this problem if a temporary buffer is not allowed?
+ * @param linkedList 
  */
-const removeDupes = (linkedList: LinkedList<number>) => {
-  let myMap = new Map<number, number>();
-  let previousNode: any = null;
+const deleteDupes = (linkedList: LinkedList<number>) => {
+  //runner technique
   let currentNode = linkedList.head;
-  while (currentNode?.data) {
-    //if current value already exists, remove current node by assigning previous next to current next. Current will be detached.
-    if (myMap.get(currentNode.data)) {
-      previousNode.next = currentNode.next;
-    } else {
-      myMap.set(currentNode.data, currentNode.data);
-      previousNode = currentNode;
+  while (currentNode !== null) {
+    let runner: LinkedListNode<number> | undefined = currentNode;
+    while (runner?.next !== null) {
+      if (runner!.next!.data === currentNode!.data) {
+        runner!.next = runner!.next!.next;
+      } else {
+        runner = runner!.next;
+      }
     }
-    //loop through linked list
-    currentNode = currentNode.next;
+    currentNode = currentNode!.next;
   }
 };
 
@@ -38,5 +38,5 @@ linkedList.add(node6);
 linkedList.add(node7);
 linkedList.print();
 console.log('deleting dupes now...');
-removeDupes(linkedList);
+deleteDupes(linkedList);
 linkedList.print();
