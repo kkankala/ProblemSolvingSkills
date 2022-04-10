@@ -17,7 +17,8 @@
     "kth-element":"ts-node ./linkedListKthToLast/index.ts",
     "delete-middle-node":"ts-node ./linkedListDeleteMiddleNode/index.ts",
     "linkedlist-partition":"ts-node ./linkedListPartition/index.ts",
-    "linkedlist-palindrome":"ts-node ./linkedListPalindrome/index.ts"
+    "linkedlist-palindrome":"ts-node ./linkedListPalindrome/index.ts",
+    "linkedlist-intersection":"ts-node ./linkedListIntersection/index.ts"
   },
   "repository": {
     "type": "git",
