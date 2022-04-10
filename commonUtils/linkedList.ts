@@ -5,6 +5,13 @@ export class LinkedListNode<T> {
     this.data = data;
     this.next = null;
   }
+  print(): void {
+    let currentNode: any = this;
+    while (currentNode?.data) {
+      console.log(currentNode.data);
+      currentNode = currentNode!.next;
+    }
+  }
 }
 
 export class LinkedList<T> {
