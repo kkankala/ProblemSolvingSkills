@@ -7,7 +7,8 @@
     "palindrome-number":"ts-node ./palindromeNumber/index.ts",
     "two-sum":"ts-node ./twoSum/index.ts",
     "urlify":"ts-node ./urlify/index.ts",
-    "is-unique":"ts-node ./isUnique/index.ts"
+    "is-unique":"ts-node ./isUnique/index.ts",
+    "check-permutation":"ts-node ./checkPermutation/index.ts"
   },
   "repository": {
     "type": "git",
