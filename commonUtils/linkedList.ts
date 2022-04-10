@@ -55,4 +55,29 @@ export class LinkedList<T> {
     let lastNode = this.getLast();
     if (lastNode) lastNode.next = node;
   };
+
+  remove = (item: T): boolean => {
+    let currentNode = this.head;
+    let previousNode: LinkedListNode<T> | null | undefined = null;
+
+    // if Head node needs to be deleted
+    if (currentNode !== null && currentNode?.data === item) {
+      this.head = currentNode.next;
+      return true;
+    }
+
+    // Search for the key to be deleted, keep track of the previous node
+    while (currentNode !== null && currentNode?.data !== item) {
+      previousNode = currentNode;
+      currentNode = currentNode?.next;
+    }
+
+    if (currentNode == null) {
+      return false;
+    }
+
+    //unlink the node from linkedlist;
+    previousNode!.next = currentNode.next;
+    return true;
+  };
 }

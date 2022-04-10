@@ -1,7 +1,7 @@
 import { LinkedList, LinkedListNode } from '../commonUtils/linkedList';
 
 /**
- * Remove Dups: Write code to remove duplicates from an unsorted linked list. FOLLOW UP
+ * Remove Dupes: Write code to remove duplicates from an unsorted linked list. FOLLOW UP
 How would you solve this problem if a temporary buffer is not allowed?
  * @param linkedList 
  */
