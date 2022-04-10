@@ -18,7 +18,7 @@
     "delete-middle-node":"ts-node ./linkedListDeleteMiddleNode/index.ts",
     "linkedlist-partition":"ts-node ./linkedListPartition/index.ts",
     "linkedlist-palindrome":"ts-node ./linkedListPalindrome/index.ts",
-    "linkedlist-intersection":"ts-node ./linkedListIntersection/index.ts"
+    "linkedlist-loop":"ts-node ./linkedListLoop/index.ts"
   },
   "repository": {
     "type": "git",
