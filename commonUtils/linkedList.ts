@@ -58,12 +58,12 @@ export class LinkedList<T> {
   }
 
   /** Add node to the end of the linked list */
-  add = (node: LinkedListNode<T>): void => {
+  add(node: LinkedListNode<T>) {
     let lastNode = this.getLast();
     if (lastNode) lastNode.next = node;
-  };
+  }
 
-  remove = (item: T): boolean => {
+  remove(item: T) {
     let currentNode = this.head;
     let previousNode: LinkedListNode<T> | null | undefined = null;
 
@@ -86,5 +86,5 @@ export class LinkedList<T> {
     //unlink the node from linkedlist;
     previousNode!.next = currentNode.next;
     return true;
-  };
+  }
 }
