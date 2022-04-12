@@ -1,16 +1,26 @@
 import { LinkedListNode } from './linkedList';
-export class Stack {
-  items: any[];
-  constructor() {
-    this.items = [];
+export class CapacityStack {
+  items: Array<number>;
+  capacity: number;
+  private size: number = 0;
+
+  constructor(capacity: number) {
+    this.items = Array<number>();
+    this.capacity = capacity;
   }
 
-  push(item: any): void {
+  push(item: number): boolean {
+    if (this.size >= this.capacity) {
+      return false;
+    }
+    this.size++;
     this.items.push(item);
+    return true;
   }
 
   pop() {
     if (this.items.length == 0) return;
+    this.size--;
     return this.items.pop();
   }
 
@@ -20,7 +30,11 @@ export class Stack {
 
   isEmpty() {
     // return true if stack is empty
-    return this.items.length == 0;
+    return this.size == 0;
+  }
+
+  isFull() {
+    return this.size === this.capacity;
   }
 
   print() {

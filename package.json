@@ -19,7 +19,8 @@
     "linkedlist-partition":"ts-node ./linkedListPartition/index.ts",
     "linkedlist-palindrome":"ts-node ./linkedListPalindrome/index.ts",
     "linkedlist-loop":"ts-node ./linkedListLoop/index.ts",
-    "stack-min":"ts-node ./stackMinimum/index.ts"
+    "stack-min":"ts-node ./stackMinimum/index.ts",
+    "stack-plates":"ts-node ./stackPlates/index.ts"
   },
   "repository": {
     "type": "git",
