@@ -23,7 +23,8 @@
     "stack-plates":"ts-node ./stackPlates/index.ts",
     "valid-palindrome":"ts-node ./validPalindrome/index.ts",
     "string-to-int":"ts-node ./stringToIntAtoi/index.ts",
-    "reverse-string":"ts-node ./reverseString/index.ts"
+    "reverse-string":"ts-node ./reverseString/index.ts",
+    "reverse-words":"ts-node ./reverseWords/index.ts"
   },
   "repository": {
     "type": "git",
