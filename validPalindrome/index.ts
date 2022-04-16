@@ -14,7 +14,7 @@ const isValidPalindrome = (sentence: string): boolean => {
   }
   let start = 0;
   let end = currentChars.length - 1;
-  while (start !== end) {
+  while (start < end) {
     if (currentChars[start] !== currentChars[end]) {
       return false;
     }
@@ -35,3 +35,5 @@ console.log(isValidPalindrome('race a car'));
 console.log(isValidPalindrome('madam'));
 
 console.log(isValidPalindrome('   '));
+
+console.log(isValidPalindrome('aa'));
