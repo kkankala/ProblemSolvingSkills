@@ -22,7 +22,8 @@
     "stack-min":"ts-node ./stackMinimum/index.ts",
     "stack-plates":"ts-node ./stackPlates/index.ts",
     "valid-palindrome":"ts-node ./validPalindrome/index.ts",
-    "string-to-int":"ts-node ./stringToIntAtoi/index.ts"
+    "string-to-int":"ts-node ./stringToIntAtoi/index.ts",
+    "reverse-string":"ts-node ./reverseString/index.ts"
   },
   "repository": {
     "type": "git",

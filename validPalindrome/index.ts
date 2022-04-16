@@ -37,3 +37,4 @@ console.log(isValidPalindrome('madam'));
 console.log(isValidPalindrome('   '));
 
 console.log(isValidPalindrome('aa'));
+console.log(isValidPalindrome('hannah'));
