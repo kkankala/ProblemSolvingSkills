@@ -24,7 +24,8 @@
     "valid-palindrome":"ts-node ./validPalindrome/index.ts",
     "string-to-int":"ts-node ./stringToIntAtoi/index.ts",
     "reverse-string":"ts-node ./reverseString/index.ts",
-    "reverse-words":"ts-node ./reverseWords/index.ts"
+    "reverse-words":"ts-node ./reverseWords/index.ts",
+    "reverse-words-variation":"ts-node ./reverseWords/variation.ts"
   },
   "repository": {
     "type": "git",
