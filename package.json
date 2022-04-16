@@ -21,7 +21,8 @@
     "linkedlist-loop":"ts-node ./linkedListLoop/index.ts",
     "stack-min":"ts-node ./stackMinimum/index.ts",
     "stack-plates":"ts-node ./stackPlates/index.ts",
-    "valid-palindrome":"ts-node ./validPalindrome/index.ts"
+    "valid-palindrome":"ts-node ./validPalindrome/index.ts",
+    "string-to-int":"ts-node ./stringToIntAtoi/index.ts"
   },
   "repository": {
     "type": "git",
