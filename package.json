@@ -4,6 +4,7 @@
   "description": "Some common problems helping to improve analytical skills.",
   "main": "index.js",
   "scripts": {
+    "binary-search":"ts-node ./binarySearch/index.ts",
     "palindrome-number":"ts-node ./palindromeNumber/index.ts",
     "two-sum":"ts-node ./twoSum/index.ts",
     "urlify":"ts-node ./urlify/index.ts",
@@ -20,7 +21,8 @@
     "linkedlist-palindrome":"ts-node ./linkedListPalindrome/index.ts",
     "linkedlist-loop":"ts-node ./linkedListLoop/index.ts",
     "stack-min":"ts-node ./stackMinimum/index.ts",
-    "stack-plates":"ts-node ./stackPlates/index.ts"
+    "stack-plates":"ts-node ./stackPlates/index.ts",
+    "smallest-difference":"ts-node ./smallestDifference/index.ts"
   },
   "repository": {
     "type": "git",
