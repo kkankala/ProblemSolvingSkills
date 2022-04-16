@@ -25,7 +25,8 @@
     "string-to-int":"ts-node ./stringToIntAtoi/index.ts",
     "reverse-string":"ts-node ./reverseString/index.ts",
     "reverse-words":"ts-node ./reverseWords/index.ts",
-    "reverse-words-variation":"ts-node ./reverseWords/variation.ts"
+    "reverse-words-variation":"ts-node ./reverseWords/variation.ts",
+    "valid-parenthesis":"ts-node ./validparenthesis/index.ts"
   },
   "repository": {
     "type": "git",
