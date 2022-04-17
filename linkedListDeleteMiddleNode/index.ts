@@ -5,6 +5,8 @@ const isMiddleNodeDeleted = (middleNode: LinkedListNode<number>): boolean => {
     return false;
   }
 
+  // to delete usually you should know previous node, but here we dont care about current node and assign next node to current node.
+  //pointing current node to next node, so current node will fall off the linked list
   let next = middleNode.next;
   middleNode.data = next!.data;
   middleNode.next = next!.next;
