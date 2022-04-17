@@ -1,3 +1,11 @@
+/**
+ * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+ * An input string is valid if:
+ * 1. Open brackets must be closed by the same type of brackets.
+ * 2. Open brackets must be closed in the correct order.
+ * @param s that contains brackets only.
+ * @returns
+ */
 const validParenthesis = (s: string): boolean => {
   if (s === null || !s.length) {
     return true;
@@ -8,6 +16,8 @@ const validParenthesis = (s: string): boolean => {
   if (chars.length % 2 !== 0) {
     return false;
   }
+  //if bracket is opening then it has to close, so its related closing will be stored on stack.
+  //stack maintains brackets that are not closed in order yet.
   for (var c of chars) {
     if (c === '[') {
       stack.push(']');
