@@ -15,8 +15,18 @@ Constraints: check here - https://leetcode.com/problems/two-sum/
 function twoSum(nums: number[], target: number): number[] {
   let response: number[] = [];
   for (let i = 0; i < nums.length; i++) {
+    //nums[i] + x = target
+    // -> x = target - nums[i]
+    // -> gather nums[i] and index of element x
     if (nums.includes(target - nums[i])) {
-      if (i == nums.indexOf(target - nums[i])) {
+      //skip if x is the current index. [...twoSum([3, 3], 6)]
+      if (i === nums.indexOf(target - nums[i])) {
+        // console.log(
+        //   `i is ${i}, nums[i] is ${nums[i]} and x is :${target - nums[i]}`
+        // );
+        // console.log(
+        //   `nums index with x value : ${nums.indexOf(target - nums[i])}`
+        // );
         continue;
       }
 
@@ -30,4 +40,5 @@ function twoSum(nums: number[], target: number): number[] {
 }
 
 printOutput('input is [2,7,11,15]', [...twoSum([2, 7, 11, 15], 9)]);
-printOutput('input is [3,2,3]', [...twoSum([3, 2, 3], 6)]);
+printOutput('input is [3,2,4]', [...twoSum([3, 2, 4], 6)]);
+printOutput('input is [3,3]', [...twoSum([3, 3], 6)]);
