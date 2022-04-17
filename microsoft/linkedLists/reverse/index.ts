@@ -3,6 +3,7 @@ import { printLinkedListNode } from '../../../commonUtils/logger';
 
 /**
  * Given the head of a singly linked list, reverse the list, and return the reversed list.
+ * Best explanation of the problem n solution: https://www.youtube.com/watch?v=XDO6I8jxHtA
  * @param head
  * @returns reversed list
  */
