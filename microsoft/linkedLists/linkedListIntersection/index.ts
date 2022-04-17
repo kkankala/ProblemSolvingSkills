@@ -1,25 +1,25 @@
-import { LinkedList, LinkedListNode } from '../commonUtils/linkedList';
+import { LinkedList, LinkedListNode } from '../../../commonUtils/linkedList';
 
 /**
  * Intersection: Given two (singly) linked lists, determine if the two lists intersect. Return the intersecting node.
  * Note that the intersection is defined based on reference, not value. That is, if the kth node of the first linked list is the exact same node (by reference) as the jth node of the second linked list, then they are intersecting.
- * @param list1
- * @param list2
+ * @param headA
+ * @param headB
  */
 const findIntersection = (
-  list1: LinkedListNode<number> | null | undefined,
-  list2: LinkedListNode<number> | null | undefined
+  headA: LinkedListNode<number> | null | undefined,
+  headB: LinkedListNode<number> | null | undefined
 ): LinkedListNode<number> | null => {
-  if (!list1 || !list2) {
+  if (!headA || !headB) {
     return null;
   }
   console.log('validation passed');
 
-  let pointerList1: any = list1;
-  let pointerList2: any = list2;
+  let pointerList1: any = headA;
+  let pointerList2: any = headB;
   while (pointerList1 != pointerList2) {
-    pointerList1 = pointerList1 !== null ? pointerList1.next : list2;
-    pointerList2 = pointerList2 !== null ? pointerList2.next : list1;
+    pointerList1 = pointerList1 !== null ? pointerList1.next : headB;
+    pointerList2 = pointerList2 !== null ? pointerList2.next : headA;
   }
   return pointerList1;
 

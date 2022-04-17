@@ -19,7 +19,6 @@
     "delete-middle-node": "ts-node ./linkedListDeleteMiddleNode/index.ts",
     "linkedlist-partition": "ts-node ./linkedListPartition/index.ts",
     "linkedlist-palindrome": "ts-node ./linkedListPalindrome/index.ts",
-    "linkedlist-loop": "ts-node ./linkedListLoop/index.ts",
     "stack-min": "ts-node ./stackMinimum/index.ts",
     "stack-plates": "ts-node ./stackPlates/index.ts",
     "smallest-difference":"ts-node ./smallestDifference/index.ts",
@@ -31,7 +30,13 @@
     "reverse-words-variation": "ts-node ./microsoft/arrays/reverseWords/variation.ts",
     "valid-parenthesis": "ts-node ./microsoft/arrays/validParenthesis/index.ts",
     "longest-palindrome": "ts-node ./microsoft/arrays/longestPalindrome/index.ts",
-    "group-anagrams":"ts-node ./microsoft/arrays/groupAnagrams/index.ts"
+    "group-anagrams":"ts-node ./microsoft/arrays/groupAnagrams/index.ts",
+    "matrix-zeros":"ts-node ./microsoft/arrays/matrixZeros/index.ts",
+    "trap-water":"ts-node ./microsoft/arrays/tapWater/index.ts",
+    "linkedlist-reverse": "ts-node ./microsoft/linkedLists/reverse/index.ts",
+    "linkedlist-loop": "ts-node ./microsoft/linkedLists/linkedListLoop/index.ts",
+    "linkedlist-add-two-numbers": "ts-node ./microsoft/linkedLists/addTwoNumbers/index.ts",
+    "linkedlist-copy-list": "ts-node ./microsoft/linkedLists/copyListWithRandomPointer/index.ts"
   },
   "repository": {
     "type": "git",

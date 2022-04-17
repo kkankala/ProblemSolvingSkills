@@ -1,4 +1,4 @@
-import { LinkedListNode } from '../commonUtils/linkedList';
+import { LinkedList, LinkedListNode } from '../../../commonUtils/linkedList';
 
 /**
  * Loop Detection: Given a circular linked list, implement an algorithm that returns the node at the beginning of the loop.
@@ -30,3 +30,17 @@ const findBeginningOfLoop = (
   }
   return head;
 };
+
+var node1 = new LinkedListNode<number>(1);
+var node2 = new LinkedListNode<number>(2);
+var node3 = new LinkedListNode<number>(3);
+var node4 = new LinkedListNode<number>(4);
+var node5 = new LinkedListNode<number>(5);
+
+const linkedList = new LinkedList<number>(node1);
+linkedList.add(node2);
+linkedList.add(node3);
+linkedList.add(node4);
+linkedList.add(node5);
+linkedList.add(node2);
+//Print will cause infinite loop
