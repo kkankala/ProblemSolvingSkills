@@ -1,6 +1,6 @@
 //https://4db.github.io/2018/07/24/binary-tree-es6/
 
-class BinaryTreeNode<T> {
+export class BinaryTreeNode<T> {
   data: T;
   left: any;
   right: any;
@@ -14,7 +14,7 @@ class BinaryTreeNode<T> {
   }
 }
 
-class BinaryTree<T> {
+export class BinaryTree<T> {
   root: BinaryTreeNode<T>;
   constructor() {
     this.root = null;
@@ -79,11 +79,11 @@ class BinaryTree<T> {
     return node;
   }
 
-  findMinNode(node: BinaryTreeNode<T>) {
+  findMinNode(node: BinaryTreeNode<T>): any {
     return node.left === null ? node : this.findMinNode(node.left);
   }
 
-  traverseInOrder(node) {
+  traverseInOrder(node: BinaryTreeNode<T> | null) {
     if (!node) {
       this.traverseInOrder(node.left);
       console.log(node.data);
@@ -91,7 +91,7 @@ class BinaryTree<T> {
     }
   }
 
-  traversePreOrder(node) {
+  traversePreOrder(node: BinaryTreeNode<T>) {
     if (!node) {
       console.log(node.data);
       this.traverseInOrder(node.left);
@@ -99,7 +99,7 @@ class BinaryTree<T> {
     }
   }
 
-  traversePostOrder(node) {
+  traversePostOrder(node: BinaryTreeNode<T>) {
     if (!node) {
       this.traverseInOrder(node.left);
       this.traverseInOrder(node.right);
