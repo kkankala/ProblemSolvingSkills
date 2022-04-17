@@ -35,7 +35,8 @@
     "trap-water":"ts-node ./microsoft/arrays/tapWater/index.ts",
     "linkedlist-reverse": "ts-node ./microsoft/linkedLists/reverse/index.ts",
     "linkedlist-loop": "ts-node ./microsoft/linkedLists/linkedListLoop/index.ts",
-    "linkedlist-add-two-numbers": "ts-node ./microsoft/linkedLists/addTwoNumbers/index.ts"
+    "linkedlist-add-two-numbers": "ts-node ./microsoft/linkedLists/addTwoNumbers/index.ts",
+    "linkedlist-copy-list": "ts-node ./microsoft/linkedLists/copyListWithRandomPointer/index.ts"
   },
   "repository": {
     "type": "git",
