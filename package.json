@@ -6,7 +6,7 @@
   "scripts": {
     "binary-search":"ts-node ./binarySearch/index.ts",
     "palindrome-number": "ts-node ./palindromeNumber/index.ts",
-    "two-sum": "ts-node ./microsoft/twoSum/index.ts",
+    "two-sum": "ts-node ./microsoft/arrays/twoSum/index.ts",
     "urlify": "ts-node ./urlify/index.ts",
     "is-unique": "ts-node ./isUnique/index.ts",
     "check-permutation": "ts-node ./checkPermutation/index.ts",
@@ -23,13 +23,13 @@
     "stack-min": "ts-node ./stackMinimum/index.ts",
     "stack-plates": "ts-node ./stackPlates/index.ts",
     "smallest-difference":"ts-node ./smallestDifference/index.ts",
-    "valid-palindrome": "ts-node ./microsoft/validPalindrome/index.ts",
-    "string-to-int": "ts-node ./microsoft/stringToIntAtoi/index.ts",
-    "reverse-string": "ts-node ./microsoft/reverseString/index.ts",
-    "reverse-words": "ts-node ./microsoft/reverseWords/index.ts",
-    "reverse-words-variation": "ts-node ./microsoft/reverseWords/variation.ts",
-    "valid-parenthesis": "ts-node ./microsoft/validParenthesis/index.ts",
-    "longest-palindrome": "ts-node ./microsoft/longestPalindrome/index.ts"
+    "valid-palindrome": "ts-node ./microsoft/arrays/validPalindrome/index.ts",
+    "string-to-int": "ts-node ./microsoft/arrays/stringToIntAtoi/index.ts",
+    "reverse-string": "ts-node ./microsoft/arrays/reverseString/index.ts",
+    "reverse-words": "ts-node ./microsoft/arrays/reverseWords/index.ts",
+    "reverse-words-variation": "ts-node ./microsoft/arrays/reverseWords/variation.ts",
+    "valid-parenthesis": "ts-node ./microsoft/arrays/validParenthesis/index.ts",
+    "longest-palindrome": "ts-node ./microsoft/arrays/longestPalindrome/index.ts"
   },
   "repository": {
     "type": "git",
