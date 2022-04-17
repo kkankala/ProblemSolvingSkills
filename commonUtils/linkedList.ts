@@ -51,10 +51,14 @@ export class LinkedList<T> {
 
   print(): void {
     let currentNode = this.head;
+    let currentText = '';
     while (currentNode !== null) {
-      console.log(currentNode?.data);
+      currentText = currentText
+        ? currentText + ' --> ' + currentNode?.data
+        : currentNode?.data?.toString();
       currentNode = currentNode?.next;
     }
+    console.log(currentText);
   }
 
   /** Add node to the end of the linked list */
