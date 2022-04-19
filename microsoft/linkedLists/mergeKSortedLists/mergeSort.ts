@@ -31,7 +31,7 @@ const mergeSortLists = (
     return lists[start];
   }
   //find middle of the array
-  let middle = Math.floor(start + (end - start) / 2); //this is same of start + end /2, but will override overflow exception
+  let middle = start + Math.floor((end - start) / 2); //this is same of start + end /2, but will override overflow exception
 
   //divide them
   let left = mergeSortLists(lists, start, middle);
