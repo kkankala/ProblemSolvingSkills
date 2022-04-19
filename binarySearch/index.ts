@@ -10,7 +10,7 @@ let binarySearch = (listOfNumbers: number[], target: number): boolean => {
 
   //while within array range limits
   while (left <= right) {
-    let mid = left + (right - left) / 2; // find midpoint of the array.
+    let mid = left + Math.floor((right - left) / 2); // find midpoint of the array.
     // console.log(`${mid} is ${mid % 2 === 0 ? 'even' : 'false'} `);
 
     if (listOfNumbers[mid] === target) {
